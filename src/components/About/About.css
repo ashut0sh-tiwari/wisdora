@@ -1,0 +1,162 @@
+.hero h2{
+    font-size: 53px;
+    line-height: 60px;
+    margin-bottom: 25px;
+    font-weight: 800;
+}
+
+.hero p{
+    font-size: 20px;
+    line-height: 26px;
+    margin-top: 10.5px;
+    min-height: 104px;
+    font-weight: 450;
+}
+
+
+.about {
+    background-color: #EFF4F6;
+    padding: 60px 0;
+
+
+
+}
+
+.about .row {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1 * var(--bs-gutter-y));
+    margin-right: calc(-.5 * var(--bs-gutter-x));
+    margin-left: calc(-.5 * var(--bs-gutter-x));
+}
+
+.about .content {
+    padding: 30px 30px 30px 0;
+}
+
+.about .content h3 {
+    font-weight: 900;
+    font-size: 72px;
+    line-height: 80px;
+    color: #001A3F;
+    margin-bottom: 30px;
+}
+
+.about .content h4{
+    color: #001A3F;   
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 30px;
+}
+
+.our-col p{
+    color: #686C7B;
+    
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+}
+
+
+.about .content p {
+    margin-bottom: 30px;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    color: #686C7B;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+}
+
+
+
+.about .icon-boxes .icon-box {
+    margin-top: 30px;
+}
+
+.bx {
+    font-family: boxicons!important;
+    font-weight: 400;
+    font-style: normal;
+    font-variant: normal;
+    line-height: 1;
+    text-rendering: auto;
+    display: inline-block;
+    text-transform: none;
+  
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.about .icon-boxes .icon-box i {
+    font-size: 40px;
+    color: #b6bdfc;
+    margin-bottom: 10px;
+}
+
+.about .icon-boxes .icon-box h4 {
+    font-size: 20px;
+    font-weight: 700;
+    margin: 0 0 10px 0;
+}
+
+.about .icon-boxes .icon-box p {
+    font-size: 15px;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+.jumbo1{
+    padding: 30px 30px 30px 30px;
+    background-color: #0076FF;
+    border-radius: 12px;
+}
+
+.jumbo1 h2{
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.jumbo1 p{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+}
+.jumbo2{
+    padding: 30px 30px 30px 30px;
+    background-color: #F7C544;
+    border-radius: 12px;
+}
+
+.jumbo2 h2{
+    color: #001A3F;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 50px;
+}
+
+.jumbo2 p{
+    color: #001A3F;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 34px;
+}
+
+.icon-boxes img{
+    width: 80px;
+}
+
+.our-vision{
+    margin-top: 4%;
+}

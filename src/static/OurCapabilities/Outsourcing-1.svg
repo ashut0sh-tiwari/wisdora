@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="Layer_1" x="0px" y="0px" viewBox="0 0 77.5 77" style="enable-background:new 0 0 77.5 77;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#858F94;stroke-width:2;stroke-linejoin:round;}
+	.st1{fill:none;stroke:#0776FF;stroke-width:3;stroke-linecap:round;stroke-linejoin:round;}
+</style>
+<g id="Group_1006" transform="translate(3358.944 1895.367)">
+	<g id="Group_832" transform="translate(-3356.823 -1893.246)">
+		<g id="Group_828">
+			<g id="Group_826">
+				<line id="Line_64" class="st0" x1="13.1" y1="59.9" x2="0.5" y2="72.5"></line>
+				<line id="Line_65" class="st0" x1="73.2" y1="-0.2" x2="60.1" y2="12.9"></line>
+				<path id="Path_753" class="st0" d="M62.9-0.2h10.3v10.3"></path>
+				<path id="Path_754" class="st0" d="M10.3,73H0V62.7"></path>
+			</g>
+			<g id="Group_827">
+				<line id="Line_66" class="st1" x1="13.1" y1="59.9" x2="0.5" y2="72.5"></line>
+				<line id="Line_67" class="st1" x1="73.2" y1="-0.2" x2="60.1" y2="12.9"></line>
+				<path id="Path_755" class="st1" d="M62.9-0.2h10.3v10.3"></path>
+				<path id="Path_756" class="st1" d="M10.3,73H0V62.7"></path>
+			</g>
+		</g>
+		<g id="Group_831">
+			<g id="Group_829">
+				<line id="Line_68" class="st0" x1="60.1" y1="59.9" x2="72.8" y2="72.5"></line>
+				<line id="Line_69" class="st0" x1="0" y1="-0.2" x2="13.1" y2="12.9"></line>
+				<path id="Path_757" class="st0" d="M10.3-0.2H0v10.3"></path>
+				<path id="Path_758" class="st0" d="M62.9,73h10.3V62.7"></path>
+			</g>
+			<g id="Group_830">
+				<line id="Line_70" class="st1" x1="60.1" y1="59.9" x2="72.8" y2="72.5"></line>
+				<line id="Line_71" class="st1" x1="0" y1="-0.2" x2="13.1" y2="12.9"></line>
+				<path id="Path_759" class="st1" d="M10.3-0.2H0v10.3"></path>
+				<path id="Path_760" class="st1" d="M62.9,73h10.3V62.7"></path>
+			</g>
+		</g>
+	</g>
+	<g id="Group_849" transform="translate(-3339.482 -1882.902)">
+		<g id="Group_848">
+			<g id="Group_845">
+				<g id="Group_843" transform="translate(0 5.051)">
+					<g id="Group_842" transform="translate(7.981)">
+						<g id="Group_841">
+							<path id="Path_769" class="st1" d="M16.9,20c-1.7,1.1-3.7,1.7-5.8,1.7C5,21.8,0.1,16.9,0,10.9"></path>
+							<path id="Path_770" class="st1" d="M0,10.9c-0.1-6.1,4.8-11,10.9-11.1c0,0,0,0,0,0c6.1-0.1,11,4.8,11.1,10.9         c0,2.6-0.9,5.2-2.6,7.2"></path>
+						</g>
+					</g>
+					<path id="Path_771" class="st1" d="M0,42.4h38.6c0-7.1-3.6-13.7-9.6-17.5c-3-1.8-6.4-2.8-9.9-2.7C8.4,22.3-0.1,31.3,0,42.4z"></path>
+				</g>
+				<g id="Group_844" transform="translate(6.548)">
+					<path id="Path_772" class="st1" d="M23,5.4c1,1.3,1.6,2.9,1.7,4.6"></path>
+					<path id="Path_773" class="st1" d="M0,10.2c0-4,5.3-10.4,12.3-10.5c2.4,0,4.7,0.7,6.7,2"></path>
+				</g>
+			</g>
+			<g id="Group_846" transform="translate(29.685 9.829)">
+				<path id="Path_774" class="st1" d="M0,9.7c0.2,0.7,0.8,1.1,1.5,1.1l0,0c0.8,0,1.5-0.6,1.5-1.4L3,1.1C2.9,0.3,2.3-0.3,1.5-0.2      l0,0C0.7-0.3,0,0.3,0,1.1L0,2"></path>
+			</g>
+			<g id="Group_847" transform="translate(4.992 9.829)">
+				<path id="Path_775" class="st1" d="M3.1,9.7c-0.2,0.7-0.8,1.1-1.5,1.1l0,0C0.7,10.9,0,10.2,0,9.4l0.1-8.3      c0.1-0.8,0.7-1.4,1.5-1.3l0,0c0.8,0,1.4,0.6,1.5,1.3l0,0.9"></path>
+			</g>
+			<path id="Path_776" class="st1" d="M28,23.8h3.1c0.7,0,1.2-0.6,1.2-1.2v-3.3"></path>
+			<path id="Rectangle_269" class="st1" d="M24.3,22.5h2.5c0.7,0,1.2,0.6,1.2,1.2l0,0c0,0.7-0.6,1.2-1.2,1.2h-2.5     c-0.7,0-1.2-0.6-1.2-1.2l0,0C23,23.1,23.6,22.5,24.3,22.5z"></path>
+		</g>
+	</g>
+</g>
+</svg>

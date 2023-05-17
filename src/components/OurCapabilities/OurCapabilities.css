@@ -1,0 +1,126 @@
+.our-capabilities{
+    background-color: #00133A;
+
+}
+
+.our-capabilities h2{
+    color: #F3F8FF;
+  
+    font-size: 84px;
+    font-weight: 800;
+    line-height: 90px;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+.our-capabilities p {
+    color: #98A3C0;
+ 
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.box-2{
+    margin: 0px 10px;
+    border: 1px solid #98A3C0;
+    padding: 15px;
+    border-radius: 6px;
+    min-height: 110px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.box-2 img{
+    width: 25%;
+    height: 60px !important;
+}
+
+.box-2 p{
+    margin-left: 15px;
+    line-height: 20px;
+    font-size: 18px;
+}
+
+.toolkit{
+    background-color: #001A3F;
+}
+
+.toolkit h2{
+    color: #F3F8FF;
+  
+    font-size: 84px;
+    font-weight: 800;
+    line-height: 90px;
+    text-shadow: 0px 0px 10px rgba(0,0,0,0.3);
+}
+
+.toolkit p{
+    color: #FFFFFF;
+
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 28px;
+}
+
+.inner-box p{
+    font-weight: 700;
+}
+
+.box-3 ul{
+    padding: 40px 35px;
+    list-style-type: none;
+    background-color: #012964;
+    border-radius: 5px;
+    
+}
+
+.box-3 li{
+    display: inline-block;
+    vertical-align: middle;
+    width: 47%;
+    margin: 20px 5px;
+}
+
+.box-3 ul li img{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+.box-3 ul li p{
+    color: #fff;
+    font-size: 17px;
+    line-height: 20px;
+    width: 55%;
+    display: inline-block;
+    margin-bottom: 10px;
+    
+}
+
+.method{
+    background-image: url('./../../static/OurCapabilities/coremethod_Bg1.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.method h2{
+    color: #FFFFFF;
+ 
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 60px;
+    margin-bottom: 1%;
+}
+
+.method p{
+    text-align: center;
+    color: #FFFFFF;
+   
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 28px;
+}
+
+.method img{
+    width: 90%;
+}
