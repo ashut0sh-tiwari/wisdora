@@ -21,6 +21,19 @@
   border-radius: 50px;
   color: #fff;
 }
+
+.footer-header-shades {
+  display: flex;
+  width: fit-content;
+  margin: auto;
+  justify-content: center;
+  font-size: 36px;
+  font-weight: 500;
+  transform: translateY(-50%);
+  border-radius: 50px;
+  color: #fff;
+}
+
 .footer-body {
   display: flex;
   max-width: 1100px;
@@ -88,4 +101,124 @@
 .social-icon:hover {
   background-color: #007bff;
   color: #fff;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0 30px;
+  width: 300px;
+}
+
+.tick-icon {
+  margin-right: 10px;
+}
+
+.tick-icon i {
+  color: #fff;
+  font-size: 24px;
+}
+
+.content {
+  text-align: left;
+  padding: 20px;
+}
+
+.heading {
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.subheading {
+  color: #fff;
+  font-style: italic;
+  font-size: 16px;
+}
+
+.card:nth-child(1) {
+  background-color: #0177ff;
+}
+
+.card:nth-child(2) {
+  background-color: #016ce8;
+}
+
+.card:nth-child(3) {
+  background-color: #0061cf;
+}
+
+.card:nth-child(4) {
+  background-color: #024fa8;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    margin-top: 50px;
+    padding: 10px;
+  }
+
+  .footer-header {
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .footer-header-shades {
+    font-size: 20px;
+    padding: 0;
+  }
+
+  .footer-body {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .about-wisdora {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .wisdora-address {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .card {
+    width: auto;
+    padding: 10px 2px;
+  }
+
+  .tick-icon {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
+
+  .tick-icon i {
+    color: #fff;
+    font-size: 16px;
+  }
+
+  .content {
+    padding: 5px;
+  }
+
+  .heading {
+    font-size: 14px;
+  }
+
+  .subheading {
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .footer-left,
+  .footer-right {
+    margin-bottom: 10px;
+  }
 }

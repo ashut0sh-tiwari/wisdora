@@ -5,7 +5,48 @@ const Footer = () => {
   return (
     <>
       <div className="footer">
-        <div className="footer-header">Innovate • Engage • Create • Change</div>
+        {/* Ye normal header */}
+        {/* <div className="footer-header">Innovate • Engage • Create • Change</div> */}
+
+        {/* ye dusra vaala */}
+        <div className="footer-header-shades">
+          <div className="card">
+            <div className="tick-icon">
+              <i className="fas fa-check"></i>
+            </div>
+            <div className="content">
+              <div className="heading">Innovate</div>
+              <div className="subheading">Greatness</div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="tick-icon">
+              <i className="fas fa-check"></i>
+            </div>
+            <div className="content">
+              <div className="heading">Engage</div>
+              <div className="subheading">Industry Experts.</div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="tick-icon">
+              <i className="fas fa-check"></i>
+            </div>
+            <div className="content">
+              <div className="heading">Create</div>
+              <div className="subheading">Excellence</div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="tick-icon">
+              <i className="fas fa-check"></i>
+            </div>
+            <div className="content">
+              <div className="heading">Change</div>
+              <div className="subheading">The Game.</div>
+            </div>
+          </div>
+        </div>
         <div className="footer-body">
           <div className="about-wisdora">
             Wisdora is a leading learning solutions agency that specializes in
@@ -24,26 +65,26 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <hr class="divider" />
-        <div class="footer-bottom">
-          <div class="footer-left">
-            <span class="copyright">
+        <hr className="divider" />
+        <div className="footer-bottom">
+          <div className="footer-left">
+            <span className="copyright">
               © 2022 Wisdora. All rights reserved |{" "}
               <a href="/">Privacy Policy</a>
             </span>
           </div>
-          <div class="footer-right">
-            <a href="#" class="social-icon">
-              <i class="fab fa-linkedin"></i>
+          <div className="footer-right">
+            <a href="#" className="social-icon">
+              <i className="fab fa-linkedin"></i>
             </a>
-            <a href="#" class="social-icon">
-              <i class="fab fa-twitter"></i>
+            <a href="#" className="social-icon">
+              <i className="fab fa-twitter"></i>
             </a>
-            <a href="#" class="social-icon">
-              <i class="fab fa-facebook"></i>
+            <a href="#" className="social-icon">
+              <i className="fab fa-facebook"></i>
             </a>
-            <a href="#" class="social-icon">
-              <i class="fab fa-youtube"></i>
+            <a href="#" className="social-icon">
+              <i className="fab fa-youtube"></i>
             </a>
           </div>
         </div>

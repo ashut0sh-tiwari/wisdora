@@ -14,66 +14,19 @@ import flashtohtml from "../../static/Learning Strategy/img_Flash-To-HTML5-min.j
 import Onboarding from "../../static/Learning Strategy/img_Remote-Onboarding-min.jpg";
 import measure from "../../static/Learning Strategy/Learning-Strategy-_-Training-Need-Analysis-min.jpg";
 import { Link } from "react-router-dom";
+import LearningStrategyHeader from "./StickyNav";
+import { useState } from "react";
 
 const LearningStrategy = () => {
+  const [activeSection, setActiveSection] = useState("");
+
+  const handleSectionChange = (sectionId) => {
+    setActiveSection(sectionId);
+  };
+
   return (
     <>
-      <nav id="learning-strategy" className=" justify-content-centernavbar bg-body-tertiary px-3 mb-3">
-        <ul className="nav nav-pills">
-          {/* <li className="nav-item">
-            <a className="nav-link" href="#scrollspyHeading1">
-              First
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#scrollspyHeading2">
-              Second
-            </a>
-          </li>
-          <li className="nav-item">
-            <a className="nav-link" href="#scrollspyHeading3">
-              third
-            </a>
-          </li> */}
-          {/* <li className="nav-item">
-            <a className="nav-link" href="#learningexperiencedesign">
-              fourth
-            </a>
-          </li> */}
-          <li className="nav-item">
-            <Link className="nav-link" to="#learningExperienceDesign">
-              learningexperiencedesign
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="#learningTranformation">
-              learningtranformation
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="#trainingAnalysis">
-              traininganalysis
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="#curriculumRoadmapDesign">
-              curriculumRoadmapDesign
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="#contentConversion">
-              contentconversion
-            </Link>
-          </li>
-          <li className="nav-item">
-            <Link className="nav-link" to="#MeasuringandAnalytics">
-              
-Measuring &
-Analytics
-            </Link>
-          </li>
-        </ul>
-      </nav>
+      <LearningStrategyHeader handleSectionChange={handleSectionChange} />
       <div
         data-bs-spy="scroll"
         data-bs-target="#learning-strategy"
@@ -81,7 +34,7 @@ Analytics
         data-bs-smooth-scroll="true"
         className="scrollspy-example bg-body-tertiary p-3 rounded-2"
         tabindex="0"
-      >       
+      >
         <section
           className="learningexperiencedesign text "
           id="learningExperienceDesign"
@@ -292,8 +245,8 @@ Analytics
           className="curriculumRoadmapDesign text"
           id="curriculumRoadmapDesign"
         >
-         <div className="container">
-         <div className="row g-5">
+          <div className="container">
+            <div className="row g-5">
               <div className="col-6 wow fadeInUp" data-wow-delay="0.1s">
                 <h3>Curriculum Roadmap & Design</h3>
                 <span className="blue-text">
@@ -327,12 +280,13 @@ Analytics
                 <img src={curriculumRoadmapDesign} alt="" />
               </div>
             </div>
-         </div>
-           
-        
+          </div>
         </section>
 
-        <section className="trainingAnalysis text" id="trainingAnalysis">
+        <section
+          className="trainingAnalysis text"
+          id="customContentDevelopment"
+        >
           <div className="container">
             <div className="row g-5">
               <div className="col-6">
@@ -399,72 +353,71 @@ Analytics
                     </p>
                   </li>
                 </ul>
-                
 
                 <h5>BENEFITS OF CUSTOM CONTENT DEVELOPMENT</h5>
 
-                  <ul className="checks ">
-                    <li>               
-                      <p>Personalized Learning</p>
-                    </li>
-                    <li>
-                      <p>Accessibility of learning material
-</p>
-                    </li>
-                    <li>
-                      <p>Enhancement of Training Standards</p>
-                    </li>
-                  </ul>
-               
-              </div>
+                <ul className="checks ">
+                  <li>
+                    <p>Personalized Learning</p>
+                  </li>
+                  <li>
+                    <p>Accessibility of learning material</p>
+                  </li>
+                  <li>
+                    <p>Enhancement of Training Standards</p>
+                  </li>
+                </ul>
               </div>
             </div>
-       
+          </div>
         </section>
-        <section className=" contentConversion text" id="contentConversion"> 
-            <div className="container">
-            <h3 >Content Conversion</h3>
-        <div className="accordion " id="accordionExample">
-          <div className="accordion-item">
-            <h2 className="accordion-header" id="headingOne">
-              <button
-                className="accordion-button"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseOne"
-                aria-expanded="true"
-                aria-controls="collapseOne"
-              >
-                Conversion Strategy
-              </button>
-            </h2>
-            <div
-              id="collapseOne"
-              className="accordion-collapse collapse show"
-              aria-labelledby="headingOne"
-              data-bs-parent="#accordionExample"
-            >
-              <div className="accordion-body">
-                
+        <section className=" contentConversion text" id="contentConversion">
+          <div className="container">
+            <h3>Content Conversion</h3>
+            <div className="accordion " id="accordionExample">
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingOne">
+                  <button
+                    className="accordion-button"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseOne"
+                    aria-expanded="true"
+                    aria-controls="collapseOne"
+                  >
+                    Conversion Strategy
+                  </button>
+                </h2>
+                <div
+                  id="collapseOne"
+                  className="accordion-collapse collapse show"
+                  aria-labelledby="headingOne"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div className="accordion-body">
                     <div className="row g-5 text">
                       <div className="col-6 wow fadeInUp" data-wow-delay="0.1s">
-                        
                         <span className="blue-text">
-                          <p>
-                          Learning in an Interactive and Impactful way!
-                          </p>
+                          <p>Learning in an Interactive and Impactful way!</p>
                         </span>
                         <p>
-                        If you already have your training goals set and content modules ready for the new team members, it’s important to equip them with the latest learning material design with the latest methodologies as obsolete learning material excites no one! Wisdora recreates your previous courses as Interactive learning modules for greater retention of knowledge in learners. Inclusive of latest trends such as Netflix-style trailers, gamification and heightened design experience for smooth transfer of Information.
+                          If you already have your training goals set and
+                          content modules ready for the new team members, it’s
+                          important to equip them with the latest learning
+                          material design with the latest methodologies as
+                          obsolete learning material excites no one! Wisdora
+                          recreates your previous courses as Interactive
+                          learning modules for greater retention of knowledge in
+                          learners. Inclusive of latest trends such as
+                          Netflix-style trailers, gamification and heightened
+                          design experience for smooth transfer of Information.
                         </p>
 
                         <h5>BENEFITS OF CONTENT CONVERSION</h5>
 
                         <ul className="checks">
                           <li>
-                            <p>
-                            Information becomes relatable and adaptable
-                            </p>
+                            <p>Information becomes relatable and adaptable</p>
                           </li>
                           <li>
                             <p>Transforming dated material to engaging</p>
@@ -475,46 +428,53 @@ Analytics
                         </ul>
                       </div>
                       <div className="col-6">
-                      <img src={contentConversion} alt="" />
+                        <img src={contentConversion} alt="" />
                       </div>
                     </div>
-                  
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="accordion-item">
-            <h2 className="accordion-header" id="headingTwo">
-              <button
-                className="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseTwo"
-                aria-expanded="false"
-                aria-controls="collapseTwo"
-              >
-                Flash to HTML
-              </button>
-            </h2>
-            <div
-              id="collapseTwo"
-              className="accordion-collapse collapse"
-              aria-labelledby="headingTwo"
-              data-bs-parent="#accordionExample"
-            >
-              <div className="accordion-body">
-              <div className="row g-5 text">
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingTwo">
+                  <button
+                    className="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="collapseTwo"
+                  >
+                    Flash to HTML
+                  </button>
+                </h2>
+                <div
+                  id="collapseTwo"
+                  className="accordion-collapse collapse"
+                  aria-labelledby="headingTwo"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div className="accordion-body">
+                    <div className="row g-5 text">
                       <div className="col-6 wow fadeInUp" data-wow-delay="0.1s">
-                        
                         <span className="blue-text">
                           <p>
-                          Got Flash? No worries we have HTML translating service too!
+                            Got Flash? No worries we have HTML translating
+                            service too!
                           </p>
                         </span>
                         <p>
-                        After Adobe Flash goes off the record, Your last course should not go in vain, so we came up with the recent popular service of translating Flash learning material to HTML.
-                        <br/>
-                        <br/>
-Our Flash to HTML5 solutions include unlimited access to the most highly-skilled eLearning developers, instructional designers, and content conversion specialists in the industry—skilled in the latest development tools, as well as learning technologies and techniques.
+                          After Adobe Flash goes off the record, Your last
+                          course should not go in vain, so we came up with the
+                          recent popular service of translating Flash learning
+                          material to HTML.
+                          <br />
+                          <br />
+                          Our Flash to HTML5 solutions include unlimited access
+                          to the most highly-skilled eLearning developers,
+                          instructional designers, and content conversion
+                          specialists in the industry—skilled in the latest
+                          development tools, as well as learning technologies
+                          and techniques.
                         </p>
 
                         <h5>BENEFITS OF CONVERTING TO HTML5</h5>
@@ -522,63 +482,74 @@ Our Flash to HTML5 solutions include unlimited access to the most highly-skilled
                         <ul className="checks">
                           <li>
                             <p>
-                            Produces courses that are visually appealing, responsive and interactive
+                              Produces courses that are visually appealing,
+                              responsive and interactive
                             </p>
                           </li>
                           <li>
-                            <p>Allows faster development and program to run in the new environment</p>
+                            <p>
+                              Allows faster development and program to run in
+                              the new environment
+                            </p>
                           </li>
                           <li>
-                            <p>Provides the ability to make agilechanges to design, user interfaces, graphics and content</p>
+                            <p>
+                              Provides the ability to make agilechanges to
+                              design, user interfaces, graphics and content
+                            </p>
                           </li>
                         </ul>
                       </div>
                       <div className="col-6">
-                      <img src={flashtohtml} alt="" />
+                        <img src={flashtohtml} alt="" />
                       </div>
                     </div>
+                  </div>
+                </div>
               </div>
-            </div>
-          </div>
-          <div className="accordion-item">
-            <h2 className="accordion-header" id="headingThree">
-              <button
-                className="accordion-button collapsed"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#collapseThree"
-                aria-expanded="false"
-                aria-controls="collapseThree"
-              >
-                Onboarding never stops! 
-              </button>
-            </h2>
-            <div
-              id="collapseThree"
-              className="accordion-collapse collapse"
-              aria-labelledby="headingThree"
-              data-bs-parent="#accordionExample"
-            >
-              <div className="accordion-body">
-              <div className="row g-5 text">
+              <div className="accordion-item">
+                <h2 className="accordion-header" id="headingThree">
+                  <button
+                    className="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapseThree"
+                    aria-expanded="false"
+                    aria-controls="collapseThree"
+                  >
+                    Onboarding never stops!
+                  </button>
+                </h2>
+                <div
+                  id="collapseThree"
+                  className="accordion-collapse collapse"
+                  aria-labelledby="headingThree"
+                  data-bs-parent="#accordionExample"
+                >
+                  <div className="accordion-body">
+                    <div className="row g-5 text">
                       <div className="col-6 wow fadeInUp" data-wow-delay="0.1s">
-                        
                         <span className="blue-text">
-                          <p>
-                          Learning in an Interactive and Impactful way!
-                          </p>
+                          <p>Learning in an Interactive and Impactful way!</p>
                         </span>
                         <p>
-                        If you already have your training goals set and content modules ready for the new team members, it’s important to equip them with the latest learning material design with the latest methodologies as obsolete learning material excites no one! Wisdora recreates your previous courses as Interactive learning modules for greater retention of knowledge in learners. Inclusive of latest trends such as Netflix-style trailers, gamification and heightened design experience for smooth transfer of Information.
+                          If you already have your training goals set and
+                          content modules ready for the new team members, it’s
+                          important to equip them with the latest learning
+                          material design with the latest methodologies as
+                          obsolete learning material excites no one! Wisdora
+                          recreates your previous courses as Interactive
+                          learning modules for greater retention of knowledge in
+                          learners. Inclusive of latest trends such as
+                          Netflix-style trailers, gamification and heightened
+                          design experience for smooth transfer of Information.
                         </p>
 
                         <h5>BENEFITS OF CONTENT CONVERSION</h5>
 
                         <ul className="checks">
                           <li>
-                            <p>
-                            Information becomes relatable and adaptable
-                            </p>
+                            <p>Information becomes relatable and adaptable</p>
                           </li>
                           <li>
                             <p>Transforming dated material to engaging</p>
@@ -589,35 +560,38 @@ Our Flash to HTML5 solutions include unlimited access to the most highly-skilled
                         </ul>
                       </div>
                       <div className="col-6">
-                      <img src={Onboarding} alt="" />
+                        <img src={Onboarding} alt="" />
                       </div>
                     </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-            </div>
-       
         </section>
-      
+
         <section
           className="MeasuringandAnalytics text"
           id="MeasuringandAnalytics"
         >
-         <div className="container">
-         <div className="row g-5">
-            <div className="col-6">
+          <div className="container">
+            <div className="row g-5">
+              <div className="col-6">
                 <img src={measure} alt="" />
               </div>
               <div className="col-6 wow fadeInUp" data-wow-delay="0.1s">
-                <h3>
-Measuring &
-Analytics</h3>
+                <h3>Measuring & Analytics</h3>
                 <span className="blue-text">
-                  <p>Being result-driven can make analysis and assessment easier!</p>
+                  <p>
+                    Being result-driven can make analysis and assessment easier!
+                  </p>
                 </span>
                 <p>
-                Our Learning Management System comes with an easy and accessible assessment analysis. During the testing of our instructional design modules, we check the assessment measurability of our metrics and redefine them until the desired outcome.
+                  Our Learning Management System comes with an easy and
+                  accessible assessment analysis. During the testing of our
+                  instructional design modules, we check the assessment
+                  measurability of our metrics and redefine them until the
+                  desired outcome.
                 </p>
 
                 <h5>BENEFITS OF MEASURING & ANALYTICS</h5>
@@ -634,11 +608,8 @@ Analytics</h3>
                   </li>
                 </ul>
               </div>
-              
             </div>
-        
-         </div>
-            
+          </div>
         </section>
       </div>
     </>
