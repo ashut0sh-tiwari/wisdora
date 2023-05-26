@@ -5,56 +5,35 @@ import { Link } from "react-router-dom";
 
 const MenuItems = ({ items, depthLevel }) => {
   const [dropdown, setDropdown] = useState(false);
-  const [submenuHovered, setSubmenuHovered] = useState(false);
 
   let ref = useRef();
 
   useEffect(() => {
-    const closeDropdown = () => {
-      setDropdown(false);
-    };
-
-    const handleMouseLeave = (event) => {
-      if (!submenuHovered) {
-        closeDropdown();
+    const handler = (event) => {
+      if (dropdown && ref.current && !ref.current.contains(event.target)) {
+        setDropdown(false);
       }
     };
-
-    document.addEventListener("mousedown", closeDropdown);
-    document.addEventListener("touchstart", closeDropdown);
-    ref.current.addEventListener("mouseleave", handleMouseLeave);
-
+    document.addEventListener("mousedown", handler);
+    document.addEventListener("touchstart", handler);
     return () => {
-      document.removeEventListener("mousedown", closeDropdown);
-      document.removeEventListener("touchstart", closeDropdown);
-      ref.current.removeEventListener("mouseleave", handleMouseLeave);
+      // Cleanup the event listener
+      document.removeEventListener("mousedown", handler);
+      document.removeEventListener("touchstart", handler);
     };
-  }, [submenuHovered]);
+  }, [dropdown]);
 
   const onMouseEnter = () => {
-    if (window.innerWidth > 960) {
-      setDropdown(true);
-    }
+    window.innerWidth > 960 && setDropdown(true);
   };
 
   const onMouseLeave = () => {
-    if (window.innerWidth > 960) {
-      setDropdown(false);
-    }
-  };
-
-  const handleSubmenuMouseEnter = () => {
-    setSubmenuHovered(true);
-  };
-
-  const handleSubmenuMouseLeave = () => {
-    setSubmenuHovered(false);
+    window.innerWidth > 960 && setDropdown(false);
   };
 
   const closeDropdown = () => {
     dropdown && setDropdown(false);
   };
-
   return (
     <li
       className="menu-items"
@@ -130,8 +109,8 @@ const MenuItems = ({ items, depthLevel }) => {
             depthLevel={depthLevel}
             submenus={items.submenu}
             dropdown={dropdown}
-            onMouseEnter={handleSubmenuMouseEnter}
-            onMouseLeave={handleSubmenuMouseLeave}
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
           />
         </>
       ) : !items.url && items.submenu ? (

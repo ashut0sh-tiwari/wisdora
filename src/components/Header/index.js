@@ -120,7 +120,7 @@ const NavBar = () => {
             </Link>
             <NavbarItem />
           </div>
-          <button
+          {/* <button
             type="button"
             className="btn btn-primary rounded-pill"
             data-bs-toggle="modal"
@@ -166,7 +166,7 @@ const NavBar = () => {
                 </div>
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
 
         {/* <div className="navbar-items">
