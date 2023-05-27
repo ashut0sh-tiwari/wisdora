@@ -1,60 +1,96 @@
-import React from 'react'
-import './Footer.css'
+import React from "react";
+import "./Footer.css";
 
 const Footer = () => {
   return (
     <>
-    <div className="footer">
-    <div className="container">
-  <footer className="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
-    <div className="col mb-3">
-      <a href="/" className="d-flex align-items-center mb-3 link-dark text-decoration-none">
-        <svg className="bi me-2" width="40" height="32"><use></use></svg>
-      </a>
-      <p className="text-muted">© 2022</p>
-    </div>
+      <div className="footer">
+        {/* Ye normal header */}
+        {/* <div className="footer-header">Innovate • Engage • Create • Change</div> */}
 
-    <div className="col mb-3">
-
-    </div>
-
-    <div className="col mb-3">
-      <h5>Section</h5>
-      <ul className="nav flex-column">
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Home</a></li>
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Features</a></li>
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Pricing</a></li>
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">FAQs</a></li>
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">About</a></li>
-      </ul>
-    </div>
-
-    <div className="col mb-3">
-      <h5>Section</h5>
-      <ul className="nav flex-column">
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Home</a></li>
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Features</a></li>
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Pricing</a></li>
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">FAQs</a></li>
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">About</a></li>
-      </ul>
-    </div>
-
-    <div className="col mb-3">
-      <h5>Section</h5>
-      <ul className="nav flex-column">
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Home</a></li>
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Features</a></li>
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">Pricing</a></li>
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">FAQs</a></li>
-        <li className="nav-item mb-2"><a href="#" className="nav-link p-0 text-muted">About</a></li>
-      </ul>
-    </div>
-  </footer>
-</div>
-</div>
+        {/* ye dusra vaala */}
+        <div className="footer-header-shades">
+          <div className="card">
+            <div className="tick-icon">
+              <i className="fas fa-check"></i>
+            </div>
+            <div className="content">
+              <div className="heading">Innovate</div>
+              <div className="subheading">Greatness</div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="tick-icon">
+              <i className="fas fa-check"></i>
+            </div>
+            <div className="content">
+              <div className="heading">Engage</div>
+              <div className="subheading">Industry Experts.</div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="tick-icon">
+              <i className="fas fa-check"></i>
+            </div>
+            <div className="content">
+              <div className="heading">Create</div>
+              <div className="subheading">Excellence</div>
+            </div>
+          </div>
+          <div className="card">
+            <div className="tick-icon">
+              <i className="fas fa-check"></i>
+            </div>
+            <div className="content">
+              <div className="heading">Change</div>
+              <div className="subheading">The Game.</div>
+            </div>
+          </div>
+        </div>
+        <div className="footer-body">
+          <div className="about-wisdora">
+            Wisdora is a leading learning solutions agency that specializes in
+            developing and delivering custom engagements that drive business
+            impact.
+          </div>
+          <div className="wisdora-address">
+            502 Sunrise Business Park, Rd Number 16, Nehru Nagar, Wagle
+            Industrial Estate, Thane West, Thane, Maharastra 400604
+            <div
+              style={{
+                marginTop: "10px",
+              }}
+            >
+              <a href="mailto:info@wisdora.com">info@wisdora.com</a>
+            </div>
+          </div>
+        </div>
+        <hr className="divider" />
+        <div className="footer-bottom">
+          <div className="footer-left">
+            <span className="copyright">
+              © 2022 Wisdora. All rights reserved |{" "}
+              <a href="/">Privacy Policy</a>
+            </span>
+          </div>
+          <div className="footer-right">
+            <a href="#" className="social-icon">
+              <i className="fab fa-linkedin"></i>
+            </a>
+            <a href="#" className="social-icon">
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a href="#" className="social-icon">
+              <i className="fab fa-facebook"></i>
+            </a>
+            <a href="#" className="social-icon">
+              <i className="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
