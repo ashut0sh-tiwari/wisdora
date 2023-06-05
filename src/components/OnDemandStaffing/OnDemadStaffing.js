@@ -1,6 +1,6 @@
 import React from "react";
 import './OnDemandStaffing.css'
-import Header from "../Header/Header";
+
 import Footer from "../Footer/Footer";
 import odHero from "../../static/Ondemand/Wavy_Tech-01.png";
 
@@ -11,7 +11,7 @@ import consulting from "../../static/Ondemand/consulting_services.svg";
 const OnDemadStaffing = () => {
   return (
     <>
-      <Header />
+ 
       <section className="pt-4 pt-md-6">
         <div className="container">
           <div className="row align-items-center">

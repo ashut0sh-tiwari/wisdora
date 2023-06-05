@@ -5,6 +5,7 @@ import { createPopper } from "@popperjs/core";
 import "./Header.css";
 import { dropdownData } from "../../data/navbarItems";
 import NavbarItem from "./Navbar";
+import ContactForm from "../ContactForm/ContactForm";
 
 const DropdownItem = ({ item, isNested, layout }) => {
   const [isOpen, setIsOpen] = useState(true);
@@ -151,7 +152,9 @@ const NavBar = () => {
                     aria-label="Close"
                   ></button>
                 </div>
-                <div className="modal-body">...</div>
+                <div className="modal-body">
+                  <ContactForm/>
+                  </div>
                 <div className="modal-footer">
                   <button
                     type="button"

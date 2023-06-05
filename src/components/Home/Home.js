@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import CountUp from "react-countup";
 import "./Home.css";
-import Header from "../Header/Header";
+// import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 import Typewriter from "typewriter-effect";
 import heroVideo from "../../static/Home/index_video.mp4";
@@ -46,17 +46,18 @@ import wwwu from "../../static/Home/business_img.jpg";
 import customsol from "../../static/Home/customsolution.png";
 import emergingtech from "../../static/Home/emergingtech.png";
 import ldstaff from "../../static/Home/l&dstaff.png";
-import NavBar from "../Header";
+import Header2 from "../Header2.js/Header2";
+
 
 const Home = () => {
   return (
     <>
-      {/* <Header /> */}
-      <NavBar />
+    <Header2/>
+
       <section className="heroBanner">
         <div className="container">
           <div className="row align-items-center">
-            <div className=" col-lg-6">
+            <div className=" col-lg-6 col-md-6 col-sm-12">
               {/* <h1 className="mb-4 display-2 fw-bold">Wisdora is your key to <br className="d-block d-lg-none d-xl-block"/>storage here.</h1> */}
               <h1>
                 Wisdora is your key to
@@ -100,7 +101,7 @@ const Home = () => {
                 Let's Meet
               </button>
             </div>
-            <div className=" col-lg-6 ">
+            <div className=" col-md-6 col-sm-12 col-lg-6 ">
               <video
                 className="heroVideo"
                 src={heroVideo}
@@ -123,7 +124,7 @@ const Home = () => {
 
           <div className="row wwd-cards">
             <div
-              className="col-lg-4 aos-init aos-animate"
+              className="col-lg-4 col-md-4 mt-4 mt-lg-0 aos-init aos-animate"
               data-aos="fade-up"
               data-aos-delay="200"
             >
@@ -146,7 +147,7 @@ const Home = () => {
             </div>
 
             <div
-              className="col-lg-4 mt-4 mt-lg-0 aos-init aos-animate"
+              className="col-lg-4 col-md-4 mt-4 mt-lg-0 aos-init aos-animate"
               data-aos="fade-up"
               data-aos-delay="400"
             >
@@ -161,7 +162,7 @@ const Home = () => {
             </div>
 
             <div
-              className="col-lg-4 mt-4 mt-lg-0 aos-init aos-animate"
+              className="col-lg-4 col-md-4 mt-4 mt-lg-0 aos-init aos-animate"
               data-aos="fade-up"
               data-aos-delay="600"
             >
@@ -186,7 +187,7 @@ const Home = () => {
       <section className="section counter">
         <div className="container numCounter">
           <div className="row">
-            <div className="col-lg-4 col-md-6 col-sm-6">
+            <div className="col-lg-4 col-md-4">
               <div className="counter-item text-center mb-5 mb-lg-0">
                 <h2 className="mb-0">
                   <span className="counter-stat font-weight-bold">
@@ -205,7 +206,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 col-sm-6">
+            <div className="col-lg-4 col-md-4">
               <div className="counter-item text-center mb-5 mb-lg-0">
                 <h2 className="mb-0">
                   <span className="counter-stat font-weight-bold">
@@ -223,7 +224,7 @@ const Home = () => {
                 </p>
               </div>
             </div>
-            <div className="col-lg-4 col-md-6 col-sm-6">
+            <div className="col-lg-4 col-md-4">
               <div className="counter-item text-center mb-5 mb-lg-0">
                 <h2 className="mb-0">
                   <span className="counter-stat font-weight-bold">
@@ -375,19 +376,18 @@ const Home = () => {
               aria-labelledby="pills-healthcare-tab"
               tabindex="0"
             >
-              <div className="container row">
-                <div className="col-3">
-                  <img src={athenaHealth} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={ioraHealth} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={partnersHealth} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={syneosHealth} alt="" />
-                </div>
+              <div className="topbrand-container">
+                
+                  <img className="topbrands-img" src={athenaHealth} alt="" />
+                
+                  <img className="topbrands-img" src={ioraHealth} alt="" />
+              
+ 
+                  <img className="topbrands-img" src={partnersHealth} alt="" />
+          
+          
+                  <img className="topbrands-img" src={syneosHealth} alt="" />
+           
               </div>
             </div>
             <div
@@ -397,19 +397,18 @@ const Home = () => {
               aria-labelledby="pills-financial-tab"
               tabindex="0"
             >
-              <div className="container row">
-                <div className="col-3">
-                  <img src={travelers} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={libertyMutual} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={santander} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={avantax} alt="" />
-                </div>
+              <div className="topbrand-container">
+            
+                  <img className="topbrands-img" src={travelers} alt="" />
+              
+       
+                  <img className="topbrands-img" src={libertyMutual} alt="" />
+  
+                  <img className="topbrands-img" src={santander} alt="" />
+          
+               
+                  <img className="topbrands-img" src={avantax} alt="" />
+    
               </div>
             </div>
             <div
@@ -419,19 +418,19 @@ const Home = () => {
               aria-labelledby="pills-technology-tab"
               tabindex="0"
             >
-              <div className="container row">
-                <div className="col-3">
-                  <img src={vmware} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={omd} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={raytheon} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={dellEmc} alt="" />
-                </div>
+              <div className="topbrand-container">
+             
+                  <img className="topbrands-img" src={vmware} alt="" />
+       
+           
+                  <img className="topbrands-img" src={omd} alt="" />
+            
+         
+                  <img className="topbrands-img" src={raytheon} alt="" />
+         
+      
+                  <img className="topbrands-img" src={dellEmc} alt="" />
+              
               </div>
             </div>
             <div
@@ -441,19 +440,19 @@ const Home = () => {
               aria-labelledby="pills-lifesciences-tab"
               tabindex="0"
             >
-              <div className="container row">
-                <div className="col-3">
-                  <img src={thermoFisher} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={alnylam} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={vertex} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={steward} alt="" />
-                </div>
+              <div className="topbrand-container">
+            
+                  <img className="topbrands-img" src={thermoFisher} alt="" />
+        
+       
+                  <img className="topbrands-img" src={alnylam} alt="" />
+          
+           
+                  <img className="topbrands-img" src={vertex} alt="" />
+           
+      
+                  <img className="topbrands-img" src={steward} alt="" />
+         
               </div>
             </div>
             <div
@@ -463,19 +462,19 @@ const Home = () => {
               aria-labelledby="pills-retail-tab"
               tabindex="0"
             >
-              <div className="container row">
-                <div className="col-3">
-                  <img src={amazon} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={newBalance} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={canes} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={staples} alt="" />
-                </div>
+              <div className="topbrand-container">
+          
+                  <img className="topbrands-img" src={amazon} alt="" />
+        
+      
+                  <img className="topbrands-img" src={newBalance} alt="" />
+           
+            
+                  <img className="topbrands-img" src={canes} alt="" />
+        
+       
+                  <img className="topbrands-img" src={staples} alt="" />
+           
               </div>
             </div>
             <div
@@ -485,19 +484,19 @@ const Home = () => {
               aria-labelledby="pills-financial-tab"
               tabindex="0"
             >
-              <div className="container row">
-                <div className="col-3">
-                  <img src={travelers} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={libertyMutual} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={santander} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={avantax} alt="" />
-                </div>
+              <div className="topbrand-container">
+                
+                  <img className="topbrands-img" src={travelers} alt="" />
+               
+          
+                  <img className="topbrands-img" src={libertyMutual} alt="" />
+            
+      
+                  <img className="topbrands-img" src={santander} alt="" />
+            
+            
+                  <img className="topbrands-img" src={avantax} alt="" />
+         
               </div>
             </div>
             <div
@@ -507,19 +506,19 @@ const Home = () => {
               aria-labelledby="pills-manufacturingservices-tab"
               tabindex="0"
             >
-              <div className="container row">
-                <div className="col-3">
-                  <img src={unifirst} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={coghlin} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={generalMills} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={americanTower} alt="" />
-                </div>
+              <div className="topbrand-container">
+               
+                  <img className="topbrands-img" src={unifirst} alt="" />
+           
+           
+                  <img className="topbrands-img" src={coghlin} alt="" />
+         
+         
+                  <img className="topbrands-img" src={generalMills} alt="" />
+          
+          
+                  <img className="topbrands-img" src={americanTower} alt="" />
+                
               </div>
             </div>
             <div
@@ -529,19 +528,18 @@ const Home = () => {
               aria-labelledby="pills-education-tab"
               tabindex="0"
             >
-              <div className="container row">
-                <div className="col-3">
-                  <img src={boston} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={snhu} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={babson} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={ohiostate} alt="" />
-                </div>
+              <div className="topbrand-container">
+              
+                  <img className="topbrands-img" src={boston} alt="" />
+        
+            
+                  <img className="topbrands-img" src={snhu} alt="" />
+             
+                  <img className="topbrands-img" src={babson} alt="" />
+               
+         
+                  <img className="topbrands-img" src={ohiostate} alt="" />
+            
               </div>
             </div>
             <div
@@ -551,19 +549,18 @@ const Home = () => {
               aria-labelledby="pills-nonprofit-tab"
               tabindex="0"
             >
-              <div className="container row">
-                <div className="col-3">
-                  <img src={thenewEngland} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={pathfinder} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={americanRedcross} alt="" />
-                </div>
-                <div className="col-3">
-                  <img src={ons} alt="" />
-                </div>
+              <div className="topbrand-container">
+              
+                  <img className="topbrands-img" src={thenewEngland} alt="" />
+                
+                
+                  <img className="topbrands-img" src={pathfinder} alt="" />
+             
+           
+                  <img className="topbrands-img" src={americanRedcross} alt="" />
+        
+                  <img className="topbrands-img" src={ons} alt="" />
+              
               </div>
             </div>
           </div>

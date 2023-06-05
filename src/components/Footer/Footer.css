@@ -153,6 +153,20 @@
   background-color: #024fa8;
 }
 
+
+/* TABLET LANDSCAPE / DESKTOP */
+@media only screen and (max-width: 1024px) {
+  
+
+  .card {
+    width: auto;
+    padding: 10px 2px;
+  }
+
+
+
+}    
+
 @media screen and (max-width: 768px) {
   .footer {
     margin-top: 50px;
@@ -222,3 +236,22 @@
     margin-bottom: 10px;
   }
 }
+/* SMARTPHONES PORTRAIT */
+/* @media only screen and (min-width: 300px) {
+
+
+} */
+
+/* SMARTPHONES LANDSCAPE */
+/* @media only screen and (min-width: 480px) {
+
+
+} */
+
+/* TABLETS PORTRAIT */
+/* @media only screen and (min-width: 768px) {
+
+
+} */
+
+

@@ -1,0 +1,50 @@
+.navbar {
+    padding: 0px;
+  }
+
+.dropdown-menu{
+    width: 400px;
+}
+
+.dropdown-item{
+    display: flex;
+    white-space: unset;
+}
+
+.navbar .container{
+    max-width: 1475px;
+}
+
+.navbar-brand img{
+    width: 230px;
+    height: 100px;
+}
+
+.dropdown .dropdown-menu{
+    display: none;
+}
+
+.dropdown:hover > .dropdown-menu, .dropend:hover > .dropdown-menu {
+    display: block;
+    margin-top: .125em;
+    margin-left: .125em;
+}
+
+@media screen and (min-width: 769px){
+    .dropend:hover > .dropdown-menu {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        
+       }
+}
+
+.nav-item a {
+    
+    font-size: 16px;
+    font-weight: 500;
+    color: #20263B80;
+    position: relative;
+    display: block;
+    text-decoration: none;
+}

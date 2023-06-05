@@ -21,8 +21,15 @@ body {
   font-weight: 400;
   line-height: 1.5;
   -webkit-text-size-adjust: 100%;
+
 }
 
 code {
   font-family: 'Montserrat', sans-serif;
 }
+
+/* .rootscreen{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+} */

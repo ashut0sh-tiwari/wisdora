@@ -1,7 +1,7 @@
 import React from 'react'
 import './About.css'
 
-import Header from '../Header/Header'
+
 import Footer from '../Footer/Footer'
 import heroImg from '../../static/About/hero-img.png'
 import vip from '../../static/About/VIP.png'
@@ -15,7 +15,7 @@ import flag from '../../static/About/flag.svg'
 const About = () => {
   return (
     <>
-    <Header/>
+    
     <section className=" hero d-flex align-items-center">
 
 <div className="container">

@@ -29,14 +29,14 @@ import mobilelearn from '../../static/OurCapabilities/Mobile-Learning.svg'
 import translation from '../../static/OurCapabilities/Translation-Localization.svg'
 import podcast from '../../static/OurCapabilities/Podcasts.svg'
 import methodimg from '../../static/OurCapabilities/What_We_Do-02-2-1024x446.png'
-import Header from '../Header/Header'
+
 import Footer from '../Footer/Footer'
 
 
 const OurCapabilities = () => {
   return (
     <>
-    <Header/>
+ 
    <section className="our-capabilities">
     <div className="container">
     <div className="row">
